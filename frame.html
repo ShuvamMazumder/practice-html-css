@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .photo-frame{
+            width: 500px;
+            height: 500px;
+            border: 2px solid red;
+            border-radius: 5px;
+            position: relative;
+        }
+        .photo-frame .photo{
+            width: 100%;
+            height: 100%;
+        }
+        .photo-detail{
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            top:0px;
+            color: white;
+            display: none;
+
+        }
+        .photo-frame:hover .photo-detail{
+            display: block;
+            background-color: rgba(252, 222, 167,0.2);
+        }
+        .photo-detail h3{
+            text-align: center;
+            background-color: orchid;
+        }
+    </style>
+</head>
+<body>
+    <h1>My photo album</h1>
+    <section class="photo-album">
+        <div class="photo-frame">
+            <img src="images/moon.jpg" alt="" class="photo">
+            <div class="photo-detail">
+                <h3>Moon with boy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae pariatur, autem ipsam dignissimos officia commodi aut incidunt quas architecto nam!</p>
+            </div>
+        </div>
+        
+
+    </section>
+</body>
+</html>
